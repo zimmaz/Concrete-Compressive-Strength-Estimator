@@ -15,8 +15,7 @@ df.columns = list(map(lambda x: re.sub(pattern, r'\1', x), list(df.columns.value
 
 scaler = preprocessing.StandardScaler()
 scaled_df = scaler.fit_transform(df)
-scaled_df = pd.DataFrame(scaled_df, columns=df.columns
-                         )
+scaled_df = pd.DataFrame(scaled_df, columns=df.columns)
 
 
 fig, (ax1, ax2) = plt.subplots(ncols=2, figsize=(12, 8))
